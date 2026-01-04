@@ -1,0 +1,21 @@
+#Dependencias (Se instalan con npm install, no se suben)
+node_modules/
+
+#Builds de producción
+dist/
+build/
+
+#Variables de Entorno
+.env
+.env.local
+.env.*.local
+uploads/.env
+
+#Archivos de sistema operativo (Basura)
+.DS_Store
+Thumbs.db
+
+#Logs de npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
