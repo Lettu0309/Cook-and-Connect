@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChefHat, Moon, Sun, Menu, User, LogOut, Settings, PlusCircle, BookOpen } from 'lucide-react';
+import { Moon, Sun, Menu, User, LogOut, Settings, PlusCircle, BookOpen } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../contexts/ThemeContext';
 import { useAuth } from '../../contexts/AuthContext';
@@ -63,7 +63,13 @@ const Header: React.FC = () => {
           className="flex items-center gap-3 cursor-pointer select-none"
           onClick={() => navigate(isAuthenticated ? '/feed' : '/')}
         >
-          <ChefHat className="h-8 w-8 text-brand-brick dark:text-brand-amber" />
+          {/* <ChefHat className="h-8 w-8 text-brand-brick dark:text-brand-amber" />*/}
+                    <img 
+            src="/CC_icon.png" 
+            alt="Cook & Connect Logo" 
+            className="h-10 w-10 object-contain"
+            style={{ borderRadius: "50%" }}
+          />
           <span className="text-2xl font-serif font-bold text-brand-brick dark:text-brand-amber tracking-tight hidden sm:block">
             Cook & Connect
           </span>
